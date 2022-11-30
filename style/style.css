@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    margin-left: 938px;
+    margin-top: 50px;
+}
+ul{
+    width: 600px;
+}
+ul li a{
+    padding: 26px 23px;
+    background-color: #C4C4C4;
+    border-radius: 0 35px 0 35px;
+    color: #000000;
+}
+ul li .active{
+    background-color: #79B331;
+    color: #ffffff;
+}
+ul li a:hover{
+    color: #ffffff;
+    background-color: #79B331;
+}
+
+.aqcia{
+    width: 440px;
+    height: 190px;
+    /* background-color: #1f3800; */
+    margin-left: 1004px;
+    margin-top: 94px;
+}
+.wre{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #79B331;
+    position: relative;
+    animation: burtibrunavs 10s infinite;
+}
+
+@keyframes burtibrunavs {
+    0% {top:0; left:0;}
+    25% {top:0; left:408px;}
+    50% {top: 158px;left: 408px;}
+    75% {top: 158px; left:0;}
+    100% {top:0; left:0;}
+}
+.aqcia p{
+    text-align: center;
+}
+.aqciatext{
+    padding: 20px 0px;
+    font-size: 18px;
+}
+.aqciadro{
+    font-size: 36px;
+}
+.xe{
+    width: 1100px;
+    /* background-color: red; */
+    margin-left: 750px;
+    margin-top: 426px;
+    position: relative;
+}
+.gero{
+    width: 1px;
+    height: 430px;
+    background-color: #C4C4C4;
+    margin: 0 auto;
+}
+.xeinfo{
+    width: 50%;
+    position: absolute;
+    top:-44px;
+    left:0;
+    /* background-color: #2e5400; */
+}
+.xeinfo2{
+    left:50%;
+    top: 70px;
+}
+.xeinfo3{
+    top: 188px;
+}
+.xeinfo4{
+    left:50%;
+    top: 298px;
+}
+.fotoli{
+    width: 70px;
+    height: 70px;
+    border-radius: 0 35px 0 35px;
+    background-color: #C4C4C4;
+}
+.right{
+    transform: rotate(90deg);
+}
+.xeinfo p{
+    width: 450px;
+    
+}
+.xeinfo:hover .xeinfotext{
+    color: #79B331;
+}
+.xeinfo:hover .fotoli{
+    background-color: #79B331;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    body{
+        background-position-x: -200px;
+    }
+    .xe{
+        width: 550px;
+        margin-left: 200px;
+    }
+    .xe .xeinfo{
+        width: 100%;
+    }
+    .xeinfo2, .xeinfo4{
+        flex-direction: row-reverse;
+        left: 0;
+    }
+    .right{
+        transform: rotate(0deg);
+    }
+    .gero{
+      margin-left: 100%;  
+    }
+    nav{
+        margin-left: 100px;
+    }
+    .aqcia{
+        margin-left: 200px;
+    }
+  }
+
+  @media only screen and (max-width: 390px) {
+    body{
+        background-position-x: -400px;
+    }
+    header ul li a{
+        display: none;
+    }
+    header ul{
+        flex-direction: column;
+        margin-top: -10px;
+    }
+    header ul li{
+        width: 62px;
+        height: 6px;
+        margin-top: 4px;
+        margin-left: 60%;
+        background-color: #C4C4C4;
+    }
+    header ul:hover .hh{
+        display: none;
+    }
+    header ul:hover .hhh{
+        transform: rotate(45deg);
+    }
+   
+    .aqcia{
+        width: 370px;
+        height: 170px;
+        margin-top: 54px;
+        margin-left: 40%;
+    }
+    .wre{
+        animation: burtibrunavs 10s infinite;
+    }
+    
+    @keyframes burtibrunavs {
+        0% {top:0; left:0;}
+        25% {top:0; left:338px;}
+        50% {top: 138px;left: 338px;}
+        75% {top: 138px; left:0;}
+        100% {top:0; left:0;}
+    }
+    .aqciatext{
+        font-size: 16px;
+    }
+    .aqciadro{
+        font-size: 24px;
+    }
+    .xe{
+        width: 380px;
+        height: 600px;
+        margin-left: 40%;
+        margin-top: 60px;
+    }
+    .xe p{
+        text-align: center;
+    }
+    .gero{
+        display: none;
+    }
+    
+    .xeinfo1, .xeinfo3{
+        flex-direction: column-reverse;
+    }
+
+    .xeinfo2, .xeinfo4{
+        flex-direction: column;
+    }
+    .fotoli{
+        margin: 20px;
+    }
+    .fotoli:hover{
+        background-color: #79B331;
+    }
+    .xeinfo1{
+        top: 100px;
+    }
+    .xeinfo2{
+        top: 300px;
+    }
+    .xeinfo3{
+        top: 500px;
+    }
+    .xeinfo4{
+        top: 700px;
+    }
+    .right{
+        transform: rotate(0deg);
+    }
+    
+    
+  }
+
+  
